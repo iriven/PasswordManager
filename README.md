@@ -48,13 +48,12 @@ Another algorithm name is supported:
 It is very important that you should check the return value of `PasswordHash` method prior to storing it, because `false` or `null` may be returned if it encountered an error.
 
 To verify a hash created by `PasswordHash`, simply call:
+
 ````PHP
-	if ($Encryption->PasswordVerify($password, $hashedPassword)) 
-    {
-		/* Valid : store in DB or Continue login process*/
+	if ($Encryption->PasswordVerify($password, $hashedPassword)){
+	// Valid : store in DB or Continue login process
 	} 
-    else 
-    {
-		/* Invalid: display error */
+    else {
+	// Invalid: display error
 	}
 ````
