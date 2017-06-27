@@ -45,15 +45,27 @@ Another algorithm name is supported:
 ````
 #### Verifying Password Hashes
 
-It is very important that you should check the return value of `PasswordHash` method prior to storing it, because `false` or `null` may be returned if it encountered an error.
-
-To verify a hash created by `PasswordHash`, simply call:
+It is very important that you should check the return value of "PasswordHash" method prior to storing it, because "false" or "null" may be returned if it encountered an error.
+To verify a hash created by "PasswordHash", simply call:
 
 ````PHP
 	if ($Encryption->PasswordVerify($password, $hashedPassword)){
 	// Valid : store in DB or Continue login process
 	} 
-    else {
+    	else {
 	// Invalid: display error
+	}
+````
+#### Rehashing Passwords
+
+From time to time you may update your hashing parameters (algorithm, cost, etc). So a function to determine if rehashing is necessary is available:
+
+````PHP
+    if ($Encryption->PasswordVerify($password, $hashedPassword)){
+    		if ($Encryption->PasswordNeedsReHash($hashedPassword, $algorithm, $options))
+		{
+			$hash = $Encryption->PasswordHash($password, $algorithm, $options);
+			/* Store new hash in db */
+		}
 	}
 ````
