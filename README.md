@@ -89,7 +89,7 @@ If you use this library in your project please add a backlink to this page by th
 
 ```html
 
-<a href="https://github.com/iriven/PasswordUtils" target="_blank">This Project Uses Alfred's TCHONDJO  PHPDbal Library.</a>
+<a href="https://github.com/iriven/PasswordUtils" target="_blank">This Project Uses Alfred's TCHONDJO PasswordUtils Library.</a>
 ```
 ## Issues Repport
 Repport issues [Here](https://github.com/iriven/PasswordUtils/issues)
