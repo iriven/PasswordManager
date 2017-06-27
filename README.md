@@ -16,7 +16,7 @@ require_once 'PasswordUtils.php';
 ```php
 $Encryption = new \Security\PasswordUtils();
 ```
-**Creating Password Hashes**
+#### Creating Password Hashes
 
 To create a password hash from a password, simply use the `password_hash` function.
 ````PHP
@@ -29,10 +29,17 @@ To create a password hash from a password, simply use the `password_hash` functi
     * The cost can range from `4` to `31`. I would suggest that you use the highest cost that you can, while keeping 
     * response time reasonable 
     */
-    
     $hashedPassword = $Encryption->PasswordHash($password, PASSWORD_BCRYPT,['cost' => 12]);
 ````
 Another algorithm name is supported:
 ````PHP
     PASSWORD_DEFAULT
+    
+    /**
+    * This will use the strongest algorithm available to PHP at the current time. Presently, this is the same as 
+    * specifying `PASSWORD_BCRYPT`. But in future versions of PHP, it may be updated to use a stronger algorithm 
+    * if one is introduced. It can also be changed if a problem is identified with the BCRYPT algorithm. Note that 
+    * if you use this option, you are **strongly** encouraged to store it in a `VARCHAR(255)` column to avoid 
+    * truncation issues if a future algorithm increases the length of the generated hash.
+    */
 ````
