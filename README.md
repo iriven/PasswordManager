@@ -43,3 +43,18 @@ Another algorithm name is supported:
     * truncation issues if a future algorithm increases the length of the generated hash.
     */
 ````
+#### Verifying Password Hashes
+
+It is very important that you should check the return value of `PasswordHash` method prior to storing it, because `false` or `null` may be returned if it encountered an error.
+
+To verify a hash created by `PasswordHash`, simply call:
+````PHP
+	if ($Encryption->PasswordVerify($password, $hashedPassword)) 
+    {
+		/* Valid : store in DB or Continue login process*/
+	} 
+    else 
+    {
+		/* Invalid: display error */
+	}
+````
