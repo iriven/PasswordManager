@@ -21,15 +21,6 @@ $Encryption = new \Security\PasswordUtils();
 To create a password hash from a password, simply use the `PasswordHash` method
 ````PHP
     $hashedPassword = $Encryption->PasswordHash($password, PASSWORD_BCRYPT);
-    
-    /**
-    * Note that the algorithm that we chose is `PASSWORD_BCRYPT`. That's the current strongest algorithm supported. 
-    * This is the `BCRYPT` crypt algorithm. It produces a 60 character hash as the result. `BCRYPT` also allows for 
-    * you to define a `cost` parameter in the options array. This allows for you to change the CPU cost of the algorithm. 
-    * The cost can range from `4` to `31`. I would suggest that you use the highest cost that you can, while keeping 
-    * response time reasonable 
-    */
-    $hashedPassword = $Encryption->PasswordHash($password, PASSWORD_BCRYPT,['cost' => 12]);
 ````   
 Note that the algorithm that we chose is `PASSWORD_BCRYPT`. That's the current strongest algorithm supported. 
 This is the `BCRYPT` crypt algorithm. It produces a 60 character hash as the result. `BCRYPT` also allows for 
