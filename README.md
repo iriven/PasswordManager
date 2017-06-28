@@ -18,7 +18,7 @@ $Encryption = new \Security\PasswordUtils();
 ```
 #### Creating Password Hashes
 
-To create a password hash from a password, simply use the `password_hash` function.
+To create a password hash from a password, simply use the `PasswordHash` method
 ````PHP
     $hashedPassword = $Encryption->PasswordHash($password, PASSWORD_BCRYPT);
     
@@ -43,6 +43,13 @@ Another algorithm name is supported:
     * truncation issues if a future algorithm increases the length of the generated hash.
     */
 ````
+There are two other algorithm implemented in this class:
+````PHP
+PASSWORD_SHA256  and  PASSWORD_SHA512
+````
+Note that SHA hashes are not implemented in password_hash() or password_verify() in PHP 5.5 and are not recommended 
+for use. Recommend only the default BCrypt option
+
 #### Verifying Password Hashes
 
 It is very important that you should check the return value of "PasswordHash" method prior to storing it, because "false" or "null" may be returned if it encountered an error.
