@@ -48,7 +48,7 @@ There are two other algorithm implemented in this class:
 PASSWORD_SHA256  and  PASSWORD_SHA512
 ````
 Note that SHA hashes are not implemented in password_hash() or password_verify() in PHP 5.5 and are not recommended 
-for use. Recommend only the default BCrypt option
+for use. Recommend only the default BCrypt option in production environment.
 
 #### Verifying Password Hashes
 
