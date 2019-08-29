@@ -1,4 +1,4 @@
-# PasswordManager
+# Password
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDCFPNTKUC4TU)
 
 A PHP password protection and verification Library. This library is intended to provide forward compatibility with the [password_*](http://php.net/password)  functions that ship with PHP 5.5.
@@ -10,7 +10,7 @@ A PHP password protection and verification Library. This library is intended to 
 To utilize PasswordUtils, first import and require PasswordUtils.php file in your project.
 ##### Installation
 ```php
-require_once 'PasswordManager.php';
+require_once 'Password.php';
 ```
 ##### Initialisation
 ```php
@@ -93,7 +93,7 @@ If you use this library in your project please add a backlink to this page by th
 
 ```html
 
-<a href="https://github.com/iriven/PasswordUtils" target="_blank">This Project Uses Alfred's TCHONDJO PasswordUtils Library.</a>
+<a href="https://github.com/iriven/Password" target="_blank">This Project Uses Alfred's TCHONDJO Password Library.</a>
 ```
 ## Issues Repport
-Repport issues [Here](https://github.com/iriven/PasswordUtils/issues)
+Repport issues [Here](https://github.com/iriven/Password/issues)
