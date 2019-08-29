@@ -7,7 +7,7 @@ A PHP password protection and verification Library. This library is intended to 
 
 #### Installation And Initialisation
 
-To utilize PasswordUtils, first import and require PasswordUtils.php file in your project.
+To utilize PasswordManager, first import and require Password.php file in your project.
 ##### Installation
 ```php
 require_once 'Password.php';
