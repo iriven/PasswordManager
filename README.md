@@ -93,7 +93,7 @@ If you use this library in your project please add a backlink to this page by th
 
 ```html
 
-<a href="https://github.com/iriven/Password" target="_blank">This Project Uses Alfred's TCHONDJO Password Library.</a>
+<a href="https://github.com/iriven/PasswordManager" target="_blank">This Project Uses Alfred's TCHONDJO PasswordManager Library.</a>
 ```
 ## Issues Repport
-Repport issues [Here](https://github.com/iriven/Password/issues)
+Repport issues [Here](https://github.com/iriven/PasswordManager/issues)
