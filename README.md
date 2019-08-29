@@ -10,11 +10,11 @@ A PHP password protection and verification Library. This library is intended to 
 To utilize PasswordUtils, first import and require PasswordUtils.php file in your project.
 ##### Installation
 ```php
-require_once 'PasswordUtils.php';
+require_once 'PasswordManager.php';
 ```
 ##### Initialisation
 ```php
-$Encryption = new \Security\PasswordUtils();
+$Encryption = new \Security\PasswordManager();
 ```
 #### Creating Password Hashes
 
