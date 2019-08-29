@@ -12,7 +12,7 @@ defined('PASSWORD_SHA512') OR define('PASSWORD_SHA512', -2);
  * Class PasswordUtils
  * @package Security
  */
-class PasswordUtils
+class PasswordManager
 {
  CONST BLOWFISH_CHAR_RANGE = './0123456789ABCDEFGHIJKLMONPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
     CONST BLOWFISH_CRYPT_SETTING = '$2a$';
