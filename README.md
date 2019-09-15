@@ -1,5 +1,6 @@
 # PasswordManager
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XDCFPNTKUC4TU)
+[![GitHub license](https://img.shields.io/badge/license-AGPL-blue.svg)](https://github.com/iriven/PasswordManager/blob/master/LICENSE)
 
 A PHP password protection and verification Library. This library is intended to provide forward compatibility with the [password_*](http://php.net/password)  functions that ship with PHP 5.5.
 
